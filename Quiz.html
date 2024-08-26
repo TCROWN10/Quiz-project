@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>TCROWN QUIZ</title>
+</head>
+<body>
+    <nav
+    class="flex justify-between items-center p-4 bg-white shadow-md relative"
+  >
+    <!--QuizQues Logo -->
+    <div class="text-xl font-bold">
+      <span class="text-green-700 text-2xl md:text-4xl mt"> 
+        <span class="text-4xl md:text-6xl">T</span>CROWN</span
+      ><span class="text-gray-700 text-2xl md:text-4xl">QUIZ</span>
+    </div>
+
+    <div class="flex md:gap-12 gap-4 -mb-2">
+      <div
+        class="timer text-md md:text-2xl font-semibold text-red-800"
+        id="timer"
+      >
+        Time left: 30:00
+      </div>
+
+      <!-- Calculator Icon -->
+      <div class="relative">
+        <button
+          id="calculator-button"
+          class="text-black-400 focus:outline-none"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z"
+            />
+          </svg>
+        </button>
+
+        <!-- Calculator Modal -->
+        <div
+          id="calculator-modal"
+          class="absolute right-0 mt-2 bg-white p-2 rounded-lg shadow-lg w-48 hidden"
+        >
+          <!-- Calculator Display -->
+          <div class="text-center mb-2">
+            <input
+              id="calculator-display"
+              type="text"
+              class="w-full p-2 border border-gray-300 rounded"
+              readonly
+            />
+          </div>
+
+          <!-- Calculator Buttons -->
+          <div class="grid grid-cols-4 gap-2">
+            <button class="bg-gray-200 p-2 rounded">9</button>
+            <button class="bg-gray-200 p-2 rounded">7</button>
+            <button class="bg-gray-200 p-2 rounded">8</button>
+            <button class="bg-gray-300 p-2 rounded">/</button>
+            <button class="bg-gray-200 p-2 rounded">4</button>
+            <button class="bg-gray-200 p-2 rounded">5</button>
+            <button class="bg-gray-200 p-2 rounded">6</button>
+            <button class="bg-gray-300 p-2 rounded">*</button>
+            <button class="bg-gray-200 p-2 rounded">1</button>
+            <button class="bg-gray-200 p-2 rounded">2</button>
+            <button class="bg-gray-200 p-2 rounded">3</button>
+            <button class="bg-gray-300 p-2 rounded">-</button>
+            <button class="bg-gray-200 p-2 rounded col-span-2">0</button>
+            <button class="bg-gray-200 p-2 rounded">.</button>
+            <button class="bg-gray-300 p-2 rounded">+</button>
+            <button class="bg-gray-400 p-2 rounded col-span-3">=</button>
+            <button class="bg-gray-200 p-2 rounded">Del</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="bg-gradient-to-r from-green-400 via-yellow-500 to-blue-500 flex items-center justify-center min-h-screen m-0">
+    <!-- Quiz Container -->
+    <div
+      id="quiz-container"
+      class=" flex-col items-center p-6 bg-white rounded-lg shadow-lg w-full max-w-lg mx-4 -mt-36"
+    >
+      <!-- Question Count -->
+      <div class="answered-count mb-4 text-lg" id="answered-count">
+        Question 1 of 2
+      </div>
+
+      <!-- Question Container -->
+      <div id="question-container" class="text-left mb-4">
+        <!-- Question and Options mapped and display  -->
+      </div>
+
+      <!-- Navigation Buttons -->
+      <div class="flex justify-between w-full">
+        <button
+          id="prev-button"
+          class="bg-gray-500 text-white p-2 rounded disabled:opacity-50"
+          disabled
+        >
+          Previous
+        </button>
+        <button id="next-button" class="bg-blue-500 text-white p-2 rounded">
+          Next
+        </button>
+      </div>
+
+      <!-- Submit Button -->
+      <button
+        id="submit-button"
+        class="bg-green-500 text-white p-2 rounded mt-4 hidden"
+      >
+        Submit
+      </button>
+    </div>
+
+    <!-- Score Modal -->
+    <div
+      id="feedback-modal"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+    >
+      <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+        <div class="flex justify-center mb-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-20 h-20 text-purple-500"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"
+            />
+          </svg>
+        </div>
+
+        <h2 class="text-xl font-bold mb-4">Quiz Score</h2>
+        <p id="feedback-message">Your score is: <span id="score"></span></p>
+
+        <div class="flex justify-center gap-4 mt-4">
+          <a href="/Quiz.html"
+            ><button
+              id="retake-button"
+              class="bg-yellow-500 text-white p-2 rounded"
+            >
+              Retake
+            </button></a
+          >
+          <a href="/index.html"
+            ><button
+              id="close-feedback"
+              class="bg-blue-500 text-white p-2 rounded"
+            >
+              Close
+            </button></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="index.js"></script>
+  <script src="Quiz.js"></script>
+</body>
+</html>

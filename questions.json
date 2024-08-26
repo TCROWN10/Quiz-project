@@ -1,0 +1,349 @@
+[
+    {
+      "question": "What is the purpose of HTML?",
+      "options": ["To style web pages;", "To create the structure and content of web pages;", "To add interactivity to web pages;", "To write server-side code"],
+      "answer": "To write server-side code"
+    },
+    {
+      "question": "Which language is primarily used for styling web pages?",
+      "options": ["HTML", "JavaScript", "CSS", "Python"],
+      "answer": "CSS"
+    },
+    {
+      "question": " Explain the concept of SEO (Search Engine Optimization)?",
+      "options": ["The practice of optimizing websites to rank higher in search engine results", "The process of adding interactive features to a website", "The method of securing a website from cyber attacks", "The technique of compressing website files for faster loading"],
+      "answer": "The practice of optimizing websites to rank higher in search engine results"
+    },
+    {
+      "question": "What is the purpose of the `React Router` library?",
+      "options": ["To handle events", " To fetch data ", "To manage state", " To handle client-side routing in a React application"],
+      "answer": "To handle client-side routing in a React application"
+    },
+    {
+      "question": " Which tag is used to define the title of a web page?",
+      "options": [" <head> ", "<h1> ", " <body>", "<title>"],
+      "answer": "<title>"
+    },
+    {
+      "question": "What is the purpose of the <meta> tag?",
+      "options": [
+        "   To add JavaScript functionality",
+        "To define styles for the web page ",
+        "To create a hyperlink",
+        "To provide metadata about the web page"
+      ],
+      "answer": "To provide metadata about the web page"
+    },
+    {
+      "question": "Which tag is used to create an unordered list?",
+      "options": [" <ul>", "<list>", "<li> ", "   <ol>"],
+      "answer": " <ul>"
+    },
+    {
+      "question": "What is the purpose of the <div> tag?",
+      "options": [
+        "  To add an image",
+        "To create a division or section on a web page",
+        "To create a hyperlink",
+        "To define a heading"
+      ],
+      "answer": "To create a division or section on a web page"
+    },
+    {
+      "question": "Which attribute is used to specify a unique identifier for an HTML element?",
+      "options": [
+        " id ",
+        "class ",
+        "Div",
+        "style "
+      ],
+      "answer": "id"
+    },
+    {
+      "question": "What is the purpose of the <form> tag?",
+      "options": [
+        " To create a table",
+        "To add a video to the web page",
+        "      To define a navigation menu",
+        "    To create a form for user input"
+      ],
+      "answer": "To create a form for user input"
+    },
+    {
+      "question": "Which input type is used for creating a checkbox?",
+      "options": [
+        " checkbox ;",
+        "radio ;",
+        " submit ;",
+        " text;"
+      ],
+      "answer": "checkbox;"
+    },
+    {
+      "question": "What is the purpose of the <label> tag within a form?",
+      "options": ["To group related input fields", "To define a text input field", "To provide a label for an input field", "To create a submit button"],
+      "answer": "To provide a label for an input field"
+    },
+    {
+      "question": "Which HTML tag is used to create a hyperlink?",
+      "options": ["<a>", "<href>", "<link>", "<url>"],
+      "answer": " <href>"
+    },
+    {
+      "question": "What is the purpose of the <span> tag?",
+      "options": [
+        "To define a heading",
+        "To add an image",
+        "To create a division or section on a web page",
+        "To create an inline container for text"
+      ],
+      "answer": "To create an inline container for text"
+    },
+    {
+      "question": "Which tag is used to add an image to a web page?",
+      "options": ["<img>", "<picture> ", "<image>", "<image>"],
+      "answer": "<img>"
+    },
+    {
+      "question": "What is the purpose of the alt attribute for images?",
+      "options": ["To link the image to another web page", "To apply a filter to the image", "To define the size of the image", "To specify the alternative text for an image"],
+      "answer": "To specify the alternative text for an image"
+    },
+    {
+      "question": "Which HTML tag is used to create a semantic header section?",
+      "options": [
+        "<header>",
+        "<head>",
+        "<top> ",
+        "<section>"
+      ],
+      "answer": "<header>"
+    },
+    {
+      "question": "What is the purpose of the <meta name=(viewport)> tag ?",
+      "options": ["To control the viewport on mobile devices for responsive design", "To define the character encoding of the document", "To create a navigation menu", "To link external JavaScript files "],
+      "answer": "To control the viewport on mobile devices for responsive design"
+    },
+    {
+      "question": "Which tag is used to create a semantic main content section?",
+      "options": ["<main>", " <content>", "<article>", "<body>"],
+      "answer": " <main>"
+    },
+    {
+      "question": "What does the required attribute do in an input field?",
+      "options": [
+        " It adds a tooltip to the input field",
+        "It disables the input field",
+        "It sets a default value for the input field ",
+        " It makes the input field mandatory to fill"
+      ],
+      "answer": "It makes the input field mandatory to fill"
+    },
+    {
+      "question": "Which method joins all elements of an array into a string?",
+      "options": [".join()", ".concat()", ".reduce()", ".map()"],
+      "answer": ".join()"
+    },
+    {
+      "question": "Which method can be used to find the largest number in an array?",
+      "options": [
+        "Math.max(...array)",
+        "Math.max(array)",
+        "Math.maximum(array)",
+        "Math.maxAll(array)"
+      ],
+      "answer": "Math.max(...array)"
+    },
+    {
+      "question": "Which method is used to stop an interval timer in JavaScript?",
+      "options": [
+        "clearInterval()",
+        "stopInterval()",
+        "clearTimer()",
+        "stopTimer()"
+      ],
+      "answer": "clearInterval()"
+    },
+    {
+      "question": "What does the `typeof` operator return?",
+      "options": [
+        "The data type of the operand",
+        "The length of the operand",
+        "The value of the operand",
+        "The name of the operand"
+      ],
+      "answer": "The data type of the operand"
+    },
+    {
+      "question": "Which operator is used to assign a value to a variable in JavaScript?",
+      "options": ["=", "==", "===", "!="],
+      "answer": "="
+    },
+    {
+      "question": "Which JavaScript method is used to select an HTML element by its ID?",
+      "options": [
+        "getElementById()",
+        "getElementsByClassName()",
+        "querySelector()",
+        "getElementByTagName()"
+      ],
+      "answer": "getElementById()"
+    },
+    {
+      "question": "How can you create an array in JavaScript?",
+      "options": [
+        "let arr = [];",
+        "let arr = Array();",
+        "let arr = new Array();",
+        "All of the above"
+      ],
+      "answer": "All of the above"
+    },
+    {
+      "question": "Which of the following is NOT a looping structure in JavaScript?",
+      "options": ["for", "while", "foreach", "do-while"],
+      "answer": "foreach"
+    },
+    {
+      "question": "Which of the following methods returns the number of milliseconds since 1 January 1970?",
+      "options": [
+        "Date.now()",
+        "Date.getMilliseconds()",
+        "Date.milliseconds()",
+        "Date.time()"
+      ],
+      "answer": "Date.now()"
+    },
+    {
+      "question": "Which method removes the first element from an array?",
+      "options": [".shift()", ".unshift()", ".pop()", ".splice()"],
+      "answer": ".shift()"
+    },
+    {
+      "question": "Which method creates a new array with elements that pass a test?",
+      "options": [".filter()", ".map()", ".reduce()", ".slice()"],
+      "answer": ".filter()"
+    },
+    {
+      "question": "Which JavaScript method is used to write HTML content into an HTML element?",
+      "options": [
+        "innerHTML",
+        "document.write()",
+        "document.createElement()",
+        "createElement()"
+      ],
+      "answer": "innerHTML"
+    },
+    {
+      "question": "Which of the following is NOT a valid JavaScript keyword?",
+      "options": ["let", "var", "function", "integer"],
+      "answer": "integer"
+    },
+    {
+      "question": "How do you declare a constant in JavaScript?",
+      "options": ["const", "let", "var", "constant"],
+      "answer": "const"
+    },
+    {
+      "question": "What will the following code output: `console.log([] + []);`?",
+      "options": [
+        "'' (an empty string)",
+        "[] (an empty array)",
+        "null",
+        "undefined"
+      ],
+      "answer": "'' (an empty string)"
+    },
+    {
+      "question": "Which JavaScript keyword is used to check whether a condition is true or false?",
+      "options": ["if", "for", "while", "switch"],
+      "answer": "if"
+    },
+    {
+      "question": "Which method adds new items to the end of an array, and returns the new length?",
+      "options": [".push()", ".pop()", ".shift()", ".unshift()"],
+      "answer": ".push()"
+    },
+    {
+      "question": "Which event occurs when the user clicks on an HTML element?",
+      "options": ["onchange", "onmouseover", "onmouseclick", "onclick"],
+      "answer": "onclick"
+    },
+    {
+      "question": "How do you round the number 7.25 to the nearest integer?",
+      "options": [
+        "Math.round(7.25)",
+        "round(7.25)",
+        "Math.rnd(7.25)",
+        "rnd(7.25)"
+      ],
+      "answer": "Math.round(7.25)"
+    },
+  
+    {
+      "question": "What will the following code output: `console.log('5' - 3);`?",
+      "options": ["2", "'53'", "'5'", "undefined"],
+      "answer": "2"
+    },
+  
+    {
+      "question": "Which keyword is used to declare a variable in JavaScript?",
+      "options": ["let", "var", "const", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "question": "How do you check if a value is NaN in JavaScript?",
+      "options": ["isNaN()", "typeof", "== NaN", "isNan()"],
+      "answer": "isNaN()"
+    },
+    {
+      "question": "Which method is used to convert a string to a number in JavaScript?",
+      "options": ["parseInt()", "parseFloat()", "Number()", "All of the above"],
+      "answer": "All of the above"
+    },
+    {
+      "question": "How do you add an element to the end of an array in JavaScript?",
+      "options": [" array.add(element); ", "  array.push(element);", "  Both a and c ", " array[array.length] = element; "],
+      "answer": "  Both a and c "
+    },
+    {
+      "question": "What is the purpose of the `let` keyword in JavaScript?",
+      "options": ["To declare a global variable", "To declare a block-scoped variable", " To declare a function", " To declare a constant variable"],
+      "answer": " To declare a block-scoped variable "
+    },
+    {
+      "question": "Which of the following is the correct way to define a function in JavaScript?",
+      "options": [" function: myFunction() {}", " function myFunction() {}", " Both a and b", " var myFunction = function() {}"],
+      "answer": "Both a and b"
+    },
+    {
+      "question": "What will the following code output: `console.log(2 == '2');`?",
+      "options": ["true", "false", "undefined", "NaN"],
+      "answer": "true"
+    },
+    {
+      "question": "What will be the output of the following code console.log(3 + 4)?",
+      "options": [
+        "7",
+        "34",
+        "6",
+        " NaN"
+      ],
+      "answer": "7"
+    },
+    {
+      "question": "Which of the following is not a JavaScript data type?",
+      "options": [" Array ", " Double", " Boolean", " Undefined"],
+      "answer": " Double"
+    },
+    {
+      "question": "What is the output of the following code. (console.log(typeof null))?",
+      "options": [
+        "undefined",
+        "object",
+        "null",
+        "Boolean"
+      ],
+      "answer": "object"
+    }
+  ]  
